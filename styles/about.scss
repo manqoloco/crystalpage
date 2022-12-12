@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+  background-image: linear-gradient(rgb(146, 69, 146), pink);
+}
+
+header {
+  width: 100%;
+  background: rgb(192, 149, 218);
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+display: flex;
+justify-content: center;
+margin-top: 30px;
+}
+
+#motto {
+    display: flex;
+    justify-content: center;
+}
+
+#employees {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}
+
+#employees #employee {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 200px;
+    width: 270px;
+    margin: 100px;
+    margin-top: 150px;
+}
+
+#employees p {
+    position: relative;
+    margin: 1%;
+}
+
+#employee {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    object-position: 70% 30%;
+    
+}
+
+#mail {
+    font-size: 20px;
+    display: flex;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: pink;
+}
+
+.topnav {
+    overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  margin-top: 8px;
+  margin-bottom: 4px;
+  margin-left: 20px;
+}
+
+.topnav input[type="text"] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+
+  .topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    border: none;
+  }
+
+.topnav .search-container {
+    float: right;
+    padding: 5px;
+  }
+
+@media screen and (max-width: 700px) {
+    .topnav .search-container {
+        float: none;
+    }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    padding: 14px;
+    width: 100%;
+    font-size: 10px;
+    margin: 0;
+  }
+}
+
+
+footer div {
+    position: relative;
+    margin-top: 20%;
+    height: 200px;
+    width: 100%;
+    background: rgb(192, 149, 218);
+  }
+  
+
+
+
+

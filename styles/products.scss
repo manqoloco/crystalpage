@@ -1,0 +1,125 @@
+$darkpurple: rgb(146, 69, 146);
+
+
+body {
+    background-image: linear-gradient(rgb(146, 69, 146),pink);
+}
+
+ // header
+
+header {
+    width: 100%;
+    background: rgb(192, 149, 218);
+  }
+
+a:link {
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: pink;
+}
+
+.topnav {
+    overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  margin-top: 8px;
+  margin-bottom: 4px;
+  margin-left: 20px;
+}
+
+.topnav input[type="text"] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+
+  .topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    border: none;
+  }
+
+.topnav .search-container {
+    float: right;
+    padding: 5px;
+  }
+
+// main 
+
+.about {
+    padding: 0px 20px;
+
+}
+
+h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#products {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    object-position: 70% 30%;
+    margin: 20px;
+    margin-top: 50px;
+    border: 2px solid $darkpurple;
+    
+}
+
+// footer
+
+footer div {
+    position: relative;
+    margin-top: 20%;
+    height: 200px;
+    width: 100%;
+    background: rgb(192, 149, 218);
+}
+
+
+// media 
+
+@media screen and (max-width: 700px) {
+    .topnav .search-container {
+        float: none;
+    }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    padding: 14px;
+    width: 100%;
+    font-size: 10px;
+    margin: 0;
+  }
+}
