@@ -1,17 +1,11 @@
-$reallydark: rgb(48, 2, 58);
-$darkpurple: rgb(146, 69, 146);
-$lightpurple: rgb(192, 149, 218);
-
 mixin theme {
-    font-family: Arial, Helvetica, sans-serif
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
   background-image: linear-gradient(rgb(146, 69, 146), pink);
   margin: 0px;
 }
-
-// header
 
 header {
   width: 100%;
@@ -25,7 +19,7 @@ header {
   text-align: center;
   width: 100%;
   height: 40px;
-  background-color: $darkpurple;
+  background-color: rgb(146, 69, 146);
 }
 
 .headericon p {
@@ -34,11 +28,11 @@ header {
   right: 43%;
   color: white;
   font-size: 26px;
-  @include theme;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 900;
   font-style: italic;
   -webkit-text-stroke: 1px black;
-  text-shadow: 2px 2px 4px $lightpurple;
+  text-shadow: 2px 2px 4px rgb(192, 149, 218);
 }
 
 .headericon img {
@@ -82,7 +76,7 @@ header {
   margin-right: 16px;
   font-size: 17px;
   border: none;
-  background-color: $darkpurple;
+  background-color: rgb(146, 69, 146);
   color: white;
 }
 
@@ -91,6 +85,7 @@ header {
   align-items: center;
   gap: 1rem;
 }
+
 .topnav .search-container {
   float: right;
 }
@@ -115,10 +110,8 @@ a:hover {
   color: pink;
 }
 
-// main
-
 h2 {
-  @include theme;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .mainimg {
@@ -132,6 +125,7 @@ main div {
   align-items: center;
   flex-wrap: wrap;
 }
+
 .imagediv {
   width: 400px;
   height: 300px;
@@ -155,8 +149,8 @@ main div p {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  color: $lightpurple;
-  -webkit-text-stroke: 1px $reallydark;
+  color: rgb(192, 149, 218);
+  -webkit-text-stroke: 1px rgb(48, 2, 58);
   padding-top: 100px;
 }
 
@@ -208,15 +202,43 @@ main div p {
   margin: 5px;
 }
 
-// footer
+.about {
+  padding: 0px 20px;
+}
+
+.smallcrystals {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product img {
+  height: 300px;
+  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 70% 30%;
+     object-position: 70% 30%;
+  margin: 20px;
+  margin-top: 50px;
+  border: 2px solid rgb(146, 69, 146);
+}
 
 footer div {
-    margin-top: 20%;
-    background: rgb(192, 149, 218);
-    overflow-wrap: break-word;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-  }
+  margin-top: 20%;
+  background: rgb(192, 149, 218);
+  overflow-wrap: break-word;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
 
 @media screen and (max-width: 700px) {
   .topnav .search-container {
@@ -232,12 +254,14 @@ footer div {
     padding: 5px;
   }
   .mainimg {
-    object-fit: contain;
-    object-position: 70% 30%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: 70% 30%;
+       object-position: 70% 30%;
   }
   .topnav a,
-  .topnav input[type="text"],
-  .topnav .search-container button {
+.topnav input[type=text],
+.topnav .search-container button {
     float: none;
     display: block;
     text-align: left;
@@ -246,4 +270,4 @@ footer div {
     font-size: 10px;
     margin: 0;
   }
-}
+}/*# sourceMappingURL=style.css.map */

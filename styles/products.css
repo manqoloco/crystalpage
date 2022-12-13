@@ -1,17 +1,6 @@
-$reallydark: rgb(48, 2, 58);
-$darkpurple: rgb(146, 69, 146);
-$lightpurple: rgb(192, 149, 218);
-
-mixin theme {
-    font-family: Arial, Helvetica, sans-serif
-}
-
 body {
   background-image: linear-gradient(rgb(146, 69, 146), pink);
-  margin: 0px;
 }
-
-// header
 
 header {
   width: 100%;
@@ -25,7 +14,7 @@ header {
   text-align: center;
   width: 100%;
   height: 40px;
-  background-color: $darkpurple;
+  background-color: rgb(146, 69, 146);
 }
 
 .headericon p {
@@ -34,11 +23,11 @@ header {
   right: 43%;
   color: white;
   font-size: 26px;
-  @include theme;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 900;
   font-style: italic;
   -webkit-text-stroke: 1px black;
-  text-shadow: 2px 2px 4px $lightpurple;
+  text-shadow: 2px 2px 4px rgb(146, 69, 146);
 }
 
 .headericon img {
@@ -48,6 +37,20 @@ header {
   transform: translate(-50%, -50%);
   width: 100px;
   height: 100px;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: pink;
 }
 
 .topnav {
@@ -82,7 +85,7 @@ header {
   margin-right: 16px;
   font-size: 17px;
   border: none;
-  background-color: $darkpurple;
+  background-color: rgb(146, 69, 146);
   color: white;
 }
 
@@ -91,6 +94,7 @@ header {
   align-items: center;
   gap: 1rem;
 }
+
 .topnav .search-container {
   float: right;
 }
@@ -101,122 +105,63 @@ header {
   margin: 0px;
 }
 
-a:link {
-  text-decoration: none;
-  color: black;
-  font-weight: 800;
-}
-
-a:visited {
-  color: black;
-}
-
-a:hover {
-  color: pink;
-}
-
-// main
-
-h2 {
-  @include theme;
-}
-
-.mainimg {
-  width: 100%;
-}
-
-main div {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.imagediv {
-  width: 400px;
-  height: 300px;
-  margin: 40px;
-}
-
-main div p {
-  position: relative;
-  margin: 30px;
-}
-
-.productimg {
-  height: 100%;
-  width: 100%;
-}
-
-.popularproducts {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  color: $lightpurple;
-  -webkit-text-stroke: 1px $reallydark;
-  padding-top: 100px;
-}
-
-#section {
-  position: relative;
+h1 {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  text-decoration: underline;
-  margin: 20px;
-  margin-top: 100px;
-}
-
-.review {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 5px;
-  width: 350px;
-  background-color: rgb(238, 214, 255);
-  border-radius: 20px;
-  margin: 20px;
-}
-
-#reviews {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 0px;
   width: 100%;
   background-color: rgb(192, 149, 218);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  padding: 0px 20px;
+  width: 100%;
+  background-color: rgb(192, 149, 218);
+}
+
+.product button {
+  background-color: black;
+  color: white;
+  border: 2px solid purple;
   border-radius: 20px;
 }
 
-.review h5 {
-  font-size: 25px;
-  position: relative;
-  margin: 10px;
+h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.review p {
-  color: rgb(2, 2, 2);
-  margin: 5px;
+.products {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-// footer
+.product img {
+  height: 300px;
+  width: 300px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: 70% 30%;
+  object-position: 70% 30%;
+  margin: 20px;
+  margin-top: 50px;
+  border: 2px solid rgb(146, 69, 146);
+}
 
 footer div {
-    margin-top: 20%;
-    background: rgb(192, 149, 218);
-    overflow-wrap: break-word;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-  }
+  position: relative;
+  margin-top: 20%;
+  height: 200px;
+  width: 100%;
+  background: rgb(192, 149, 218);
+}
 
 @media screen and (max-width: 700px) {
   .topnav .search-container {
@@ -246,4 +191,4 @@ footer div {
     font-size: 10px;
     margin: 0;
   }
-}
+}/*# sourceMappingURL=products.css.map */

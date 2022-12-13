@@ -1,0 +1,56 @@
+ body {
+  background-image: linear-gradient(rgb(146, 69, 146), pink);
+}
+
+
+footer div {
+  position: relative;
+  margin-top: 90%;
+  height: 200px;
+  width: 100%;
+  background: rgb(192, 149, 218);
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 500px;
+  width: 100%;
+  -o-object-position: 30% 70%;
+     object-position: 30% 70%;
+}
+
+main div p {
+  position: relative;
+  margin-top: 300px;
+}
+
+#searchbar {
+  position: relative;
+  height: 30px;
+  width: 250px;
+  background-color: white;
+  color: lightgray;
+}
+
+#product1 {
+  height: 20px;
+  width: 40px;
+}
+
+h2 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+# sourceMappingURL=style.css.map 
